@@ -10,7 +10,6 @@ import argparse
 from converter import Converter
 
 FILE_TYPES = ('.mp4', '.avi', '.mov', '.m4v')
-TARGET_FORMAT = 'mp4'
 TARGET_CODEC = 'h264'
 TODO_ENCODERS = ("'avc1'",)
 
