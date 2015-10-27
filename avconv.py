@@ -47,7 +47,10 @@ def process(source, config):
 	if extension.lower() not in FILE_TYPES:
 		return
 
-	c = Converter()
+	c = Converter(
+		ffmpeg_path='/usr/local/bin/ffmpeg',
+		ffprobe_path='/usr/local/bin/ffprobe'
+    )
 	info = c.probe(source)
 	if info is None:
 		return
